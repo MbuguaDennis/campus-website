@@ -1,0 +1,68 @@
+$margin: 0 auto;
+$align:center;
+
+@media screen and (max-width:640px) {
+    .header__nav{
+        margin:  0 auto;
+    }
+    .header__left{
+        max-width: 400px;
+        margin: $margin;
+        text-align: $align;
+
+    }
+    .header__right{
+        max-width: 400px;
+        margin: $margin;
+        text-align: $align;
+    }
+    
+}
+@media screen and (min-width:768px) {
+    .header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items: baseline;
+        padding: 20px;
+
+    }
+   .header__left--links{
+        display: flex;
+
+    }
+    .header__left{
+        display: flex;
+    }
+    .header__nav{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+
+    
+}
+
+// hide navbar at small screen
+@media screen and (max-width:1024px) {
+    .header__nav{
+        display: none;
+        
+      
+    }
+    .header{
+        height: 100px;
+    }
+   
+
+
+}
+
+@media screen and (min-width:1024px) {
+    .fa-bars{
+        display: none;
+    }
+    
+}
+
